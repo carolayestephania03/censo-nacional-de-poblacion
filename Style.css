@@ -1,0 +1,125 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Estilo para el formulario */
+form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Estilo de los datos del censo */
+.data-group {
+    margin-top: 20px;
+}
+
+.data-group h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.data-group p {
+    margin: 5px 0;
+}
+
+/* Diseño responsivo */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+h1{
+    background-color: #333;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor que mostrará los datos del censo */
+#datos-censo {
+    background-color: #f9f9f9; /* Color de fondo */
+    border-radius: 10px;       /* Bordes redondeados */
+    padding: 20px;             /* Espaciado interno */
+    margin-top: 20px;          /* Separación superior */
+    border: 1px solid #ccc;    /* Borde sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para los títulos dentro del contenedor de datos */
+#datos-censo h2 {
+    color: #333;            /* Color del texto */
+    font-size: 1.4rem;      /* Tamaño del texto */
+    margin-bottom: 10px;    /* Espaciado inferior */
+    border-bottom: 2px solid #28a745; /* Línea debajo del título */
+    padding-bottom: 5px;    /* Separación inferior del texto */
+}
+
+/* Estilos para los párrafos dentro del contenedor de datos */
+#datos-censo p {
+    font-size: 1rem;        /* Tamaño de letra para mejorar legibilidad */
+    color: #555;            /* Color del texto */
+    line-height: 1.6;       /* Separación entre líneas */
+    margin: 8px 0;          /* Espaciado entre los párrafos */
+}
+
+/* Resaltar información importante en negrita */
+#datos-censo p strong {
+    color: #333;            /* Color del texto */
+    font-weight: bold;      /* Negrita */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    #datos-censo {
+        padding: 15px;
+        font-size: 0.9rem;  /* Ajuste del tamaño de fuente */
+    }
+
+    #datos-censo h2 {
+        font-size: 1.2rem;  /* Ajuste del tamaño de títulos */
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos del Censo</title>
+    <!-- Enlazar CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de Indicadores del Censo Poblacional</h1>
+        
+        <!-- Formulario para ingresar ID del departamento y municipio -->
+        <form id="consulta-form">
+            <div class="form-group">
+                <label for="depto-id">ID del Departamento:</label>
+                <input type="number" id="depto-id" name="depto-id" required>
+            </div>
+            <div class="form-group">
+                <label for="municipio-id">ID del Municipio:</label>
+                <input type="number" id="municipio-id" name="municipio-id" required>
+            </div>
+            <button type="submit">Consultar</button>
+        </form>
+
+        <div id="datos-censo" class="data-group">
+            <!-- Aquí se mostrarán los datos obtenidos de la API -->
+        </div>
+    </div>
+
+    <!-- Enlazar JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
