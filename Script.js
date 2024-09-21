@@ -1,6 +1,6 @@
 // Función para obtener los datos usando el ID del departamento y el ID del municipio
-async function obtenerDatos(deptoId, municipioId) {
-    const apiUrl = `https://censopoblacion.azurewebsites.net/API/indicadores/${deptoId}/${municipioId}`;
+async function obtenerDatos( municipioId) {
+    const apiUrl = `https://censopoblacion.azurewebsites.net/API/indicadores/2/${municipioId}`;
     
     try {
         const response = await fetch(apiUrl);
@@ -11,6 +11,7 @@ async function obtenerDatos(deptoId, municipioId) {
 
         // Segundo parseo de JSON si los datos están anidados como string
         jsonData = JSON.parse(jsonData);
+
 
         // Mostrar los datos parseados en la interfaz
         mostrarDatos(jsonData);
@@ -54,10 +55,9 @@ function mostrarError(errorMessage) {
 document.getElementById('consulta-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevenir el envío tradicional del formulario
 
-    // Obtener los valores del formulario
-    const deptoId = document.getElementById('depto-id').value;
+    // Obtener los valores seleccionados del formulario (select)
     const municipioId = document.getElementById('municipio-id').value;
 
     // Llamar a la función para obtener los datos de la API
-    obtenerDatos(deptoId, municipioId);
+    obtenerDatos(municipioId);
 });

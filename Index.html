@@ -11,15 +11,21 @@
     <div class="container">
         <h1>Consulta de Indicadores del Censo Poblacional</h1>
         
-        <!-- Formulario para ingresar ID del departamento y municipio -->
+        <!-- Formulario para seleccionar Departamento y Municipio -->
         <form id="consulta-form">
+  
             <div class="form-group">
-                <label for="depto-id">ID del Departamento:</label>
-                <input type="number" id="depto-id" name="depto-id" required>
-            </div>
-            <div class="form-group">
-                <label for="municipio-id">ID del Municipio:</label>
-                <input type="number" id="municipio-id" name="municipio-id" required>
+                <label for="municipio-id">Municipio:</label>
+                <select id="municipio-id" name="municipio-id" required>
+                    <option value="201">Guastatoya</option>
+                    <option value="202">Morazán</option>
+                    <option value="203">San Agustín Acasaguastlán</option>
+                    <option value="204">San Cristóbal Acasaguastlán</option>
+                    <option value="205">El Jícaro</option>
+                    <option value="206">Sansare</option>
+                    <option value="207">Sanarate</option>
+                    <option value="208">San Antonio la Paz</option>
+                </select>
             </div>
             <button type="submit">Consultar</button>
         </form>
